@@ -26,3 +26,8 @@ See [github.com/signalapp/zkgroup](https://github.com/signalapp/zkgroup).
 
 `cross build --target armv7-unknown-linux-gnueabihf`
 `cp target/armv7-unknown-linux-gnueabihf/debug/libzkgroup.so ../libzkgroup_linux_armhf.so`
+
+or install  arm-linux-gnueabihf-gcc
+export CARGO_TARGET_ARMV7_UNKNOWN_LINUX_GNUEABIHF_LINKER=/usr/bin/arm-linux-gnueabihf-gcc
+
+cargo build --target armv7-unknown-linux-gnueabihf --release --verbose

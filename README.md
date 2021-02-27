@@ -22,7 +22,7 @@ See [github.com/signalapp/zkgroup](https://github.com/signalapp/zkgroup).
 `cp target/aarch64-unknown-linux-gnu/debug/libzkgroup.so ../libzkgroup_linux_aarch64.so`
 
 
-## linux armhf 
+## linux,armhf 
 
 `cross build --target armv7-unknown-linux-gnueabihf`
 `cp target/armv7-unknown-linux-gnueabihf/debug/libzkgroup.so ../libzkgroup_linux_armhf.so`

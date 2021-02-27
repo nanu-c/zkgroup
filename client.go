@@ -2,7 +2,7 @@ package zkgroup
 
 /*
 #cgo linux,arm64 LDFLAGS: ${SRCDIR}/lib/libzkgroup_linux_arm64.so
-#cgo linux arm LDFLAGS: ${SRCDIR}/lib/libzkgroup_linux_armhf.so
+#cgo linux,arm LDFLAGS: ${SRCDIR}/lib/libzkgroup_linux_armhf.so
 #cgo linux,amd64 LDFLAGS: ${SRCDIR}/lib/libzkgroup_linux_amd64.so
 #include "./lib/zkgroup.h"
 */

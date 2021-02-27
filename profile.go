@@ -1,9 +1,9 @@
 package zkgroup
 
 /*
-#cgo linux,amd64 LDFLAGS: '-Wl,-rpath,$$ORIGIN/' -L${SRCDIR}/lib -lzkgroup_linux_amd64
-#cgo linux,arm64 LDFLAGS: '-Wl,-rpath,$$ORIGIN/' -L${SRCDIR}/lib -lzkgroup_linux_arm64
-#cgo linux,arm LDFLAGS: '-Wl,-rpath,$$ORIGIN/' -L${SRCDIR}/lib -lzkgroup_linux_armhf
+#cgo linux,amd64 LDFLAGS: -L${SRCDIR}/lib '-Wl,-rpath,$$ORIGIN/' -lzkgroup_linux_amd64
+#cgo linux,arm64 LDFLAGS: -L${SRCDIR}/lib '-Wl,-rpath,$$ORIGIN/' -lzkgroup_linux_arm64
+#cgo linux,arm LDFLAGS: -L${SRCDIR}/lib '-Wl,-rpath,$$ORIGIN/' -lzkgroup_linux_armhf
 
 #include "lib/zkgroup.h"
 */

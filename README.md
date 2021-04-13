@@ -8,6 +8,20 @@ See [github.com/signalapp/zkgroup](https://github.com/signalapp/zkgroup).
 
 ### Build environment
 
+### With [Nix](https://nixos.org/)
+
+Simply enter the Nix shell:
+
+    $ nix-shell
+
+Alternatively, if you are also using [direnv](https://direnv.net/), you can
+allow the `.envrc` to enter automatically the Nix shell whenever you enter the
+project:
+
+    $ direnv allow
+
+### Without Nix
+
 In order to build the Rust library for all three supported platform, you’ll
 first need [Rustup](https://rustup.rs/).
 

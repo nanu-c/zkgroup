@@ -105,9 +105,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build-artifacts/zkgroup-x86_64-unknown-linux-gnu.zip
-          asset_name: libzkgroup-linux_x86_64-${{ env.VERSION }}.zip
-          asset_content_type: application/zip
+          asset_path: ./build-artifacts/zkgroup-x86_64-unknown-linux-gnu/libzkgroup.so
+          asset_name: libzkgroup-linux_x86_64-${{ env.VERSION }}.so
+          asset_content_type: application/octet-stream
 
       - name: Add zkgroup to release (aarch64)
         uses: actions/upload-release-asset@v1
@@ -115,9 +115,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build-artifacts/zkgroup-aarch64-unknown-linux-gnu.zip
-          asset_name: libzkgroup-linux-aarch64-${{ env.VERSION }}.zip
-          asset_content_type: application/zip
+          asset_path: ./build-artifacts/zkgroup-aarch64-unknown-linux-gnu/libzkgroup.so
+          asset_name: libzkgroup-linux-aarch64-${{ env.VERSION }}.so
+          asset_content_type: application/octet-stream
 
       - name: Add zkgroup to release (armv7)
         uses: actions/upload-release-asset@v1
@@ -125,6 +125,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build-artifacts/zkgroup-armv7-unknown-linux-gnueabihf.zip
-          asset_name: libzkgroup-linux-armv7-${{ env.VERSION }}.zip
-          asset_content_type: application/zip
+          asset_path: ./build-artifacts/zkgroup-armv7-unknown-linux-gnueabihf/libzkgroup.so
+          asset_name: libzkgroup-linux-armv7-${{ env.VERSION }}.so
+          asset_content_type: application/octet-stream

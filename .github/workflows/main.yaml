@@ -98,7 +98,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build-artifacts/zkgroup-debug-x86_64-unknown-linux-gnu
+          asset_path: ./build-artifacts/zkgroup-debug-x86_64-unknown-linux-gnu
           asset_name: libzkgroup-linux_x86_64-${{ env.VERSION }}
           asset_content_type: application/zip
 
@@ -108,7 +108,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build-artifacts/zkgroup-debug-aarch64-unknown-linux-gnu
+          asset_path: ./build-artifacts/zkgroup-debug-aarch64-unknown-linux-gnu
           asset_name: libzkgroup-linux-aarch64-${{ env.VERSION }}
           asset_content_type: application/zip
 
@@ -118,6 +118,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build-artifacts/zkgroup-debug-armv7-unknown-linux-gnueabihf
+          asset_path: ./build-artifacts/zkgroup-debug-armv7-unknown-linux-gnueabihf
           asset_name: libzkgroup-linux-armv7-${{ env.VERSION }}
           asset_content_type: application/zip

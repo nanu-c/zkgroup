@@ -4,7 +4,7 @@ name: CI
 
 jobs:
   build-zkgroup:
-    name: build zkgroup
+    name: Build zkgroup
     strategy:
       matrix:
         target:
@@ -79,7 +79,11 @@ jobs:
           path: build-artifacts
 
       - name: List artifact download output
-        run: ls -la build-artifacts
+        run: |
+          ls -la build-artifacts
+          ls -la build-artifacts/zkgroup-aarch64-unknown-linux-gnu
+          ls -la build-artifacts/zkgroup-armv7-unknown-linux-gnueabihf
+          ls -la build-artifacts/zkgroup-x86_64-unknown-linux-gnu
 
       - name: Create draft GitHub release page
         id: create_release
